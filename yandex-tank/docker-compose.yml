@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  yandex-tank:
+    image: direvius/yandex-tank
+    network_mode: host
+    entrypoint: ""
+    volumes:
+      - ./loadtest:/var/loadtest
+      - ./ssh:/root/.ssh
+    environment:
+      - TZ=Europe/Moscow
+      - SSH_AUTH_SOCK=/ssh-agent

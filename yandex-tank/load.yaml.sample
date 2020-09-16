@@ -1,0 +1,18 @@
+phantom:
+  address: 192.168.9.42:3051
+  headers:
+    - "[access-token: eyJhbbhaOfo0XLxMxADjeECPOL4_dBwjkKg]"
+  uris:
+    - "/wagons"
+  load_profile:
+    load_type: rps
+    schedule: const(50, 1m)
+  writelog: all
+console:
+  enabled: true
+telegraf:
+  enabled: true
+  config: /var/loadtest/monitoring.xml
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt

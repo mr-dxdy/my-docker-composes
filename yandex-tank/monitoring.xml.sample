@@ -1,0 +1,4 @@
+<Monitoring>
+    <Host address="192.168.9.42" username="user">
+    </Host>
+</Monitoring>
