@@ -1,5 +1,12 @@
-up:
-	docker-compose up -d
+version: '3'
 
-down:
-	docker-compose down
+services:
+  postgis:
+    image: postgis/postgis:9.6-2.5
+    volumes:
+      - /home/dxdy/soft/postgis/pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5433:5432
+    restart: always
