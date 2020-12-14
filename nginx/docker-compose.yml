@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:1.19.5
+    network_mode: host
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - ./certs/:/certs/
+    restart: always
