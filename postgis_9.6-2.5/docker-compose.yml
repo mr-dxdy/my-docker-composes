@@ -8,5 +8,11 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
     ports:
-      - 5433:5432
+      - 5432:5432
     restart: always
+    networks:
+      - postgres
+
+networks:
+  postgres:
+    external: true
