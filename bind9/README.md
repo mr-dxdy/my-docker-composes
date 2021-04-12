@@ -3,6 +3,8 @@ Bind 9
 
 ## Ситуация "Две сетевых карты и несколько DNS-серверов"
 
+### Решение 1
+
 Первая сеть 192.168.0.X
 Вторая сеть 192.168.25.X
 
@@ -40,3 +42,7 @@ zone "orion.web" {
 	forward first;
 	};
 ```
+
+### Решения 2
+
+[Установка приоритетов сетевых устройств](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-the-order-of-dns-servers_configuring-and-managing-networking)
