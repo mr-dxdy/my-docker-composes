@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  bind:
+    restart: always
+    image: sameersbn/bind:9.16.1-20200524
+    container_name: bind9
+    environment:
+      - WEBMIN_INIT_SSL_ENABLED=false
+    network_mode: host
+    # ports:
+    # - "53:53/udp"
+    # - "53:53/tcp"
+    # - "10000:10000/tcp"
+    volumes:
+    - ./data:/data
