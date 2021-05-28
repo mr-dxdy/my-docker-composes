@@ -2,7 +2,7 @@ version: '3'
 
 services:
   pgadmin4:
-    image: dpage/pgadmin4:2020-12-16-1
+    image: dpage/pgadmin4:2021-05-18-1
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
