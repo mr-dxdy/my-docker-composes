@@ -4,7 +4,7 @@ services:
   postgis:
     image: postgis/postgis:9.6-2.5
     volumes:
-      - /home/dxdy/soft/postgis_9.6-2.5/pgdata:/var/lib/postgresql/data
+      - ./pgdata:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=postgres
     ports:

@@ -1,3 +1,4 @@
 /nginx/certs/*
 !/nginx/certs/.keep
 /bind9/data
+/postgis_9.6-2.5/pgdata/
