@@ -2,7 +2,8 @@ version: '3'
 
 services:
   pgadmin4:
-    image: dpage/pgadmin4:latest
+    image: dpage/pgadmin4:2021-09-06-2
+    container_name: pgadmin4
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
